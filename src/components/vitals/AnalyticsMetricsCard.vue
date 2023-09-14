@@ -40,10 +40,10 @@ const metricProviderProps = computed(() => ({
     },
     ...(props.productVersionIds?.length > 0
       ? [{
-          dimension: EXPLORE_V2_DIMENSIONS.API_PRODUCT_VERSION,
-          type: EXPLORE_V2_FILTER_TYPES.IN,
-          values: props.productVersionIds
-        }]
+        dimension: EXPLORE_V2_DIMENSIONS.API_PRODUCT_VERSION,
+        type: EXPLORE_V2_FILTER_TYPES.IN,
+        values: props.productVersionIds
+      }]
       : [])
   ]
 }))
