@@ -107,11 +107,11 @@ export default defineComponent({
         key: 'product',
         to: props.product
           ? {
-            name: 'spec',
-            params: {
-              product: props.product.id
+              name: 'spec',
+              params: {
+                product: props.product.id
+              }
             }
-          }
           : undefined,
         text: props.product?.name || (helpText.nav.breadcrumbProduct)
       },
@@ -120,11 +120,11 @@ export default defineComponent({
         text: helpText.nav.breadcrumbDocumentation,
         to: props.product
           ? {
-            name: 'api-documentation-page',
-            params: {
-              product: props.product.id
+              name: 'api-documentation-page',
+              params: {
+                product: props.product.id
+              }
             }
-          }
           : undefined
       }
     ]))
