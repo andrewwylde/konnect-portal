@@ -21,8 +21,6 @@ async function loadDeps () {
   }
 }
 
-loadDeps()
-
 let ldClient: LDClient | undefined
 
 export default function useLaunchDarkly () {
